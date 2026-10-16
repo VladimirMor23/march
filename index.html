@@ -1,0 +1,297 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="СИБРАК42 — варёные раки с доставкой по Ленинску-Кузнецкому"
+  />
+  <title>СИБРАК42 — варёные раки</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#catalog" aria-label="СИБРАК42 — главная">
+        <span class="logo__crayfish" aria-hidden="true">🦞</span>
+        <span class="logo__text">
+          <strong>СИБРАК42</strong>
+          <small>варёные раки</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a class="nav-link" href="#catalog">Варёные раки</a>
+      </nav>
+
+      <button
+        class="cart-summary"
+        id="cart-toggle"
+        type="button"
+        aria-controls="cart-section"
+        aria-expanded="false"
+      >
+        <span class="cart-summary__icon" aria-hidden="true">🛒</span>
+        <span class="cart-summary__content">
+          <strong><span id="cart-count">0</span> позиций</strong>
+          <span id="cart-total">0 ₽</span>
+          <small id="cart-weight">0 кг</small>
+        </span>
+        <span class="cart-summary__arrow" aria-hidden="true">⌄</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo-section">
+      <div class="promo-bubble promo-bubble--one" aria-hidden="true">🦞</div>
+      <div class="promo-bubble promo-bubble--two" aria-hidden="true">✨</div>
+
+      <div class="container">
+        <div class="promo-banner">
+          <div class="promo-banner__content">
+            <div class="promo-title">
+              <span>🔥</span>
+              <h1>СУПЕРАКЦИЯ ДЛЯ ЛЮБИТЕЛЕЙ РАКОВ!</h1>
+              <span>🦞✨</span>
+            </div>
+
+            <p class="promo-description">
+              Скидка 500 рублей с каждого килограмма! Живые, отборные и
+              невероятно вкусные раки теперь стали ещё доступнее. Устройте
+              идеальный вечер в кругу друзей или порадуйте себя гастрономическим
+              шедевром — без лишних трат!
+            </p>
+
+            <div class="promo-benefits">
+              <div class="benefit-item">
+                <span class="benefit-item__number">1 кг</span>
+                <span>экономите <strong>500 ₽</strong></span>
+              </div>
+
+              <div class="benefit-item">
+                <span class="benefit-item__number">2 кг</span>
+                <span>забираете <strong>1 000 ₽</strong> обратно</span>
+              </div>
+
+              <div class="benefit-item">
+                <span class="benefit-item__number">5 кг</span>
+                <span>мега-скидка <strong>2 500 ₽</strong></span>
+              </div>
+            </div>
+
+            <p class="promo-note">Больше вес — круче скидка! 📈</p>
+          </div>
+
+          <div class="promo-illustration" aria-hidden="true">
+            <span class="promo-illustration__sun">✦</span>
+            <span class="promo-illustration__crayfish">🦞</span>
+            <span class="promo-illustration__plate">◯</span>
+          </div>
+        </div>
+
+        <div class="about-founder">
+          <span class="about-founder__icon" aria-hidden="true">👨‍🍳</span>
+          <p>
+            <strong>О нас</strong>
+            Основатель магазина — Анатолий Сергеевич Павлиди. За каждым
+            ведёрком — личный контроль качества и любовь к делу.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery-section">
+      <div class="container">
+        <div class="delivery-card">
+          <div class="delivery-card__location">
+            <span class="delivery-icon" aria-hidden="true">📍</span>
+            <div>
+              <p class="eyebrow">Города доставки</p>
+              <h2>Доставка осуществляется в Ленинск-Кузнецк</h2>
+              <p class="delivery-city">
+                Бесплатная доставка по г. Ленинск-Кузнецкий
+              </p>
+            </div>
+          </div>
+
+          <div class="free-delivery">
+            <span class="free-delivery__icon" aria-hidden="true">🦞</span>
+            <strong>Бесплатная доставка по г. Ленинск-Кузнецкий</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Наш ассортимент</p>
+            <h2>Варёные раки</h2>
+          </div>
+          <p>
+            Отборные раки разных размеров и вкусов — выбирайте ведёрко для себя
+            или большой компании.
+          </p>
+        </div>
+
+        <div id="products-grid" class="products-grid"></div>
+      </div>
+    </section>
+
+    <section id="cart-section" class="cart-section" hidden>
+      <div class="container">
+        <div class="cart-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Ваш заказ</p>
+              <h2>Корзина</h2>
+            </div>
+
+            <button
+              class="close-cart"
+              id="close-cart"
+              type="button"
+              aria-label="Закрыть корзину"
+            >
+              ×
+            </button>
+          </div>
+
+          <div id="cart-items" class="cart-items">
+            <p class="empty-cart">
+              <span aria-hidden="true">🦞</span>
+              В корзине пока пусто
+            </p>
+          </div>
+
+          <div class="cart-footer">
+            <div class="cart-line">
+              <span>Общий вес</span>
+              <strong id="cart-weight-details">0 кг</strong>
+            </div>
+
+            <div class="cart-line">
+              <span>Сумма заказа</span>
+              <strong id="cart-total-details">0 ₽</strong>
+            </div>
+
+            <div id="delivery-status" class="delivery-status delivery-status--free">
+              Бесплатная доставка по г. Ленинск-Кузнецкий
+            </div>
+
+            <a class="button button--primary button--wide" href="#order-form">
+              Перейти к оформлению
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-section">
+      <div class="container order-layout">
+        <div class="order-copy">
+          <p class="eyebrow">Оформление заказа</p>
+          <h2>Соберите идеальное ведёрко к вечеру</h2>
+          <p>
+            Заполните форму, и мы свяжемся с вами для подтверждения заказа и
+            удобного времени доставки.
+          </p>
+
+          <div class="order-sticker" aria-hidden="true">
+            <span>🦞</span>
+            <strong>Будет вкусно!</strong>
+          </div>
+        </div>
+
+        <section class="order-form-panel">
+          <div class="form-heading">
+            <h2>Данные для доставки</h2>
+            <span>* обязательные поля</span>
+          </div>
+
+          <form id="order-form" novalidate>
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Имя <b>*</b></span>
+                <input
+                  type="text"
+                  id="customer-name"
+                  name="name"
+                  placeholder="Ваше имя"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+
+              <label class="form-field">
+                <span>Телефон <b>*</b></span>
+                <input
+                  type="tel"
+                  id="customer-phone"
+                  name="phone"
+                  placeholder="+7 (___) ___-__-__"
+                  autocomplete="tel"
+                  required
+                />
+              </label>
+            </div>
+
+            <label class="form-field">
+              <span>Адрес <b>*</b></span>
+              <input
+                type="text"
+                id="customer-address"
+                name="address"
+                placeholder="Ленинск-Кузнецкий, улица, дом"
+                autocomplete="street-address"
+                required
+              />
+              <small id="address-status" class="address-status">
+                Введите адрес с городом
+              </small>
+            </label>
+
+            <label class="form-field">
+              <span>Комментарий</span>
+              <textarea
+                id="customer-comment"
+                name="comment"
+                rows="3"
+                placeholder="Например: позвонить за час до доставки"
+              ></textarea>
+            </label>
+
+            <button class="button button--primary button--wide" type="submit">
+              Заказать раков
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo logo--footer" href="#catalog">
+        <span class="logo__crayfish" aria-hidden="true">🦞</span>
+        <span class="logo__text">
+          <strong>СИБРАК42</strong>
+          <small>варёные раки</small>
+        </span>
+      </a>
+
+      <p>Сварили. Упаковали. Привезли.</p>
+
+      <a href="tel:+79991234567">+7 999 123-45-67</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
