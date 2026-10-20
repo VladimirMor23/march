@@ -1,297 +1,318 @@
-<!-- index.html -->
+<!-- Файл: index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="СИБРАК42 — варёные раки с доставкой по Ленинску-Кузнецкому"
-  />
-  <title>СИБРАК42 — варёные раки</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мясная лавка — мясо и домашние полуфабрикаты">
+  <title>Мясная лавка — мясо и полуфабрикаты</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#catalog" aria-label="СИБРАК42 — главная">
-        <span class="logo__crayfish" aria-hidden="true">🦞</span>
-        <span class="logo__text">
-          <strong>СИБРАК42</strong>
-          <small>варёные раки</small>
+      <a class="logo" href="#top">
+        <span class="logo-mark">🥩</span>
+        <span class="logo-name">
+          <strong>Мясная лавка42</strong>
+          <small>домашний вкус рядом</small>
         </span>
       </a>
 
-      <nav class="main-nav" aria-label="Основная навигация">
-        <a class="nav-link" href="#catalog">Варёные раки</a>
-      </nav>
+      <div class="header-summary">
+        <div class="header-stat">
+          <span>Товаров</span>
+          <strong id="cart-count">0</strong>
+        </div>
 
-      <button
-        class="cart-summary"
-        id="cart-toggle"
-        type="button"
-        aria-controls="cart-section"
-        aria-expanded="false"
-      >
-        <span class="cart-summary__icon" aria-hidden="true">🛒</span>
-        <span class="cart-summary__content">
-          <strong><span id="cart-count">0</span> позиций</strong>
-          <span id="cart-total">0 ₽</span>
-          <small id="cart-weight">0 кг</small>
-        </span>
-        <span class="cart-summary__arrow" aria-hidden="true">⌄</span>
-      </button>
+        <div class="header-stat">
+          <span>Сумма</span>
+          <strong id="cart-total">0 ₽</strong>
+        </div>
+
+        <div class="header-stat">
+          <span>Вес</span>
+          <strong id="cart-weight">0 кг</strong>
+        </div>
+
+        <button class="button button-cart" id="cart-toggle" type="button">
+          🛒 Корзина
+        </button>
+      </div>
     </div>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+      <div class="container nav-inner">
+        <a href="#meat">🥩 Мясо</a>
+        <a href="#semi-products">🍽️ Полуфабрикаты</a>
+        <a href="#delivery">🚗 Доставка</a>
+        <a href="#contacts">☎️ Контакты</a>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="promo-section">
-      <div class="promo-bubble promo-bubble--one" aria-hidden="true">🦞</div>
-      <div class="promo-bubble promo-bubble--two" aria-hidden="true">✨</div>
-
-      <div class="container">
-        <div class="promo-banner">
-          <div class="promo-banner__content">
-            <div class="promo-title">
-              <span>🔥</span>
-              <h1>СУПЕРАКЦИЯ ДЛЯ ЛЮБИТЕЛЕЙ РАКОВ!</h1>
-              <span>🦞✨</span>
-            </div>
-
-            <p class="promo-description">
-              Скидка 500 рублей с каждого килограмма! Живые, отборные и
-              невероятно вкусные раки теперь стали ещё доступнее. Устройте
-              идеальный вечер в кругу друзей или порадуйте себя гастрономическим
-              шедевром — без лишних трат!
-            </p>
-
-            <div class="promo-benefits">
-              <div class="benefit-item">
-                <span class="benefit-item__number">1 кг</span>
-                <span>экономите <strong>500 ₽</strong></span>
-              </div>
-
-              <div class="benefit-item">
-                <span class="benefit-item__number">2 кг</span>
-                <span>забираете <strong>1 000 ₽</strong> обратно</span>
-              </div>
-
-              <div class="benefit-item">
-                <span class="benefit-item__number">5 кг</span>
-                <span>мега-скидка <strong>2 500 ₽</strong></span>
-              </div>
-            </div>
-
-            <p class="promo-note">Больше вес — круче скидка! 📈</p>
-          </div>
-
-          <div class="promo-illustration" aria-hidden="true">
-            <span class="promo-illustration__sun">✦</span>
-            <span class="promo-illustration__crayfish">🦞</span>
-            <span class="promo-illustration__plate">◯</span>
-          </div>
-        </div>
-
-        <div class="about-founder">
-          <span class="about-founder__icon" aria-hidden="true">👨‍🍳</span>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-label">Домашняя мясная лавка</span>
+          <h1>Вкусно, сочно и <span>по-домашнему</span></h1>
           <p>
-            <strong>О нас</strong>
-            Основатель магазина — Анатолий Сергеевич Павлиди. За каждым
-            ведёрком — личный контроль качества и любовь к делу.
+            Свежие мясные продукты и домашние полуфабрикаты
+            с доставкой по городам Кемеровской области.
           </p>
-        </div>
-      </div>
-    </section>
 
-    <section class="delivery-section">
-      <div class="container">
-        <div class="delivery-card">
-          <div class="delivery-card__location">
-            <span class="delivery-icon" aria-hidden="true">📍</span>
-            <div>
-              <p class="eyebrow">Города доставки</p>
-              <h2>Доставка осуществляется в Ленинск-Кузнецк</h2>
-              <p class="delivery-city">
-                Бесплатная доставка по г. Ленинск-Кузнецкий
-              </p>
-            </div>
-          </div>
-
-          <div class="free-delivery">
-            <span class="free-delivery__icon" aria-hidden="true">🦞</span>
-            <strong>Бесплатная доставка по г. Ленинск-Кузнецкий</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="catalog" class="catalog-section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Наш ассортимент</p>
-            <h2>Варёные раки</h2>
-          </div>
-          <p>
-            Отборные раки разных размеров и вкусов — выбирайте ведёрко для себя
-            или большой компании.
-          </p>
-        </div>
-
-        <div id="products-grid" class="products-grid"></div>
-      </div>
-    </section>
-
-    <section id="cart-section" class="cart-section" hidden>
-      <div class="container">
-        <div class="cart-panel">
-          <div class="panel-heading">
-            <div>
-              <p class="eyebrow">Ваш заказ</p>
-              <h2>Корзина</h2>
-            </div>
-
-            <button
-              class="close-cart"
-              id="close-cart"
-              type="button"
-              aria-label="Закрыть корзину"
-            >
-              ×
-            </button>
-          </div>
-
-          <div id="cart-items" class="cart-items">
-            <p class="empty-cart">
-              <span aria-hidden="true">🦞</span>
-              В корзине пока пусто
-            </p>
-          </div>
-
-          <div class="cart-footer">
-            <div class="cart-line">
-              <span>Общий вес</span>
-              <strong id="cart-weight-details">0 кг</strong>
-            </div>
-
-            <div class="cart-line">
-              <span>Сумма заказа</span>
-              <strong id="cart-total-details">0 ₽</strong>
-            </div>
-
-            <div id="delivery-status" class="delivery-status delivery-status--free">
-              Бесплатная доставка по г. Ленинск-Кузнецкий
-            </div>
-
-            <a class="button button--primary button--wide" href="#order-form">
-              Перейти к оформлению
-              <span aria-hidden="true">→</span>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#semi-products">
+              Выбрать товары
+            </a>
+            <a class="button button-light" href="#delivery">
+              Условия доставки
             </a>
           </div>
         </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-bubble">Ням!</div>
+          <div class="hero-circle"></div>
+          <div class="hero-food food-one">🍔</div>
+          <div class="hero-food food-two">🥟</div>
+          <div class="hero-food food-three">🌭</div>
+          <div class="hero-chef">👨‍🍳</div>
+          <div class="hero-spark spark-one">✦</div>
+          <div class="hero-spark spark-two">✦</div>
+        </div>
       </div>
     </section>
 
-    <section class="order-section">
-      <div class="container order-layout">
-        <div class="order-copy">
-          <p class="eyebrow">Оформление заказа</p>
-          <h2>Соберите идеальное ведёрко к вечеру</h2>
-          <p>
-            Заполните форму, и мы свяжемся с вами для подтверждения заказа и
-            удобного времени доставки.
-          </p>
-
-          <div class="order-sticker" aria-hidden="true">
-            <span>🦞</span>
-            <strong>Будет вкусно!</strong>
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <article class="benefit-card">
+          <span class="benefit-icon">🏠</span>
+          <div>
+            <h3>По-домашнему</h3>
+            <p>Знакомый вкус и простые составы.</p>
           </div>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-icon">⚡</span>
+          <div>
+            <h3>Быстро и удобно</h3>
+            <p>Соберите заказ за несколько минут.</p>
+          </div>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-icon">🎁</span>
+          <div>
+            <h3>Бесплатная доставка</h3>
+            <p>При общем весе заказа больше 8 кг.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="meat">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker" id="semi-products">Раздел 01</span>
+            <h2>Мясо</h2>
+          </div>
+          <p>Карточки-заготовки для мясных наборов.</p>
         </div>
 
-        <section class="order-form-panel">
-          <div class="form-heading">
-            <h2>Данные для доставки</h2>
-            <span>* обязательные поля</span>
-          </div>
-
-          <form id="order-form" novalidate>
-            <div class="form-grid">
-              <label class="form-field">
-                <span>Имя <b>*</b></span>
-                <input
-                  type="text"
-                  id="customer-name"
-                  name="name"
-                  placeholder="Ваше имя"
-                  autocomplete="name"
-                  required
-                />
-              </label>
-
-              <label class="form-field">
-                <span>Телефон <b>*</b></span>
-                <input
-                  type="tel"
-                  id="customer-phone"
-                  name="phone"
-                  placeholder="+7 (___) ___-__-__"
-                  autocomplete="tel"
-                  required
-                />
-              </label>
-            </div>
-
-            <label class="form-field">
-              <span>Адрес <b>*</b></span>
-              <input
-                type="text"
-                id="customer-address"
-                name="address"
-                placeholder="Ленинск-Кузнецкий, улица, дом"
-                autocomplete="street-address"
-                required
-              />
-              <small id="address-status" class="address-status">
-                Введите адрес с городом
-              </small>
-            </label>
-
-            <label class="form-field">
-              <span>Комментарий</span>
-              <textarea
-                id="customer-comment"
-                name="comment"
-                rows="3"
-                placeholder="Например: позвонить за час до доставки"
-              ></textarea>
-            </label>
-
-            <button class="button button--primary button--wide" type="submit">
-              Заказать раков
-              <span aria-hidden="true">→</span>
-            </button>
-          </form>
-        </section>
+        <div class="product-grid meat-grid" id="meat-grid"></div>
       </div>
     </section>
+
+    <section class="catalog-section colored-section" id="semi-products">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Раздел 02</span>
+            <h2>Полуфабрикаты</h2>
+          </div>
+          <p>Домашние блюда, которые легко приготовить и приятно подать к столу.</p>
+        </div>
+
+        <div class="product-grid" id="semi-products-grid"></div>
+      </div>
+    </section>
+
+    <section class="cart-section" id="cart-section" hidden>
+      <div class="container">
+        <div class="section-heading cart-heading">
+          <div>
+            <span class="section-kicker">Ваш заказ</span>
+            <h2>Корзина</h2>
+          </div>
+
+          <button class="button button-outline" id="clear-cart" type="button">
+            Очистить корзину
+          </button>
+        </div>
+
+        <div id="cart-content"></div>
+      </div>
+    </section>
+
+    <section class="delivery-section" id="delivery">
+      <div class="container delivery-layout">
+        <div class="delivery-art" aria-hidden="true">
+          <div class="delivery-cloud cloud-one"></div>
+          <div class="delivery-cloud cloud-two"></div>
+          <div class="delivery-truck">🚚</div>
+          <div class="delivery-road"></div>
+        </div>
+
+        <div class="delivery-copy">
+          <span class="section-kicker">Раздел 03</span>
+          <h2>Доставка в города</h2>
+          <p>
+            Бесплатная доставка действует при общем весе заказа больше 8 кг.
+          </p>
+          <p style="color: black;">
+           Доставка — только по субботам и воскресеньям. Пожалуйста, учитывайте это при оформлении заказа.
+          </p>
+
+          <ul class="city-list">
+            <li>Ленинск-Кузнецк</li>
+            <li>Полысаево</li>
+            <li>Белово</li>
+            <li>Беловский район</li>
+            <li>Гурьевск</li>
+            <li>Киселевск</li>
+            <li>Прокопьевск</li>
+            <li>Новокузнецк</li>
+            <li>Мыски</li>
+            <li>Междуреченск</li>
+            <li>Осинники</li>
+            <li>Кемерово</li>
+          </ul>
+
+          <p class="delivery-warning">
+            В другие города доставка не осуществляется
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacts">
+      <div class="container contact-layout">
+        <div class="contact-card">
+          <span class="section-kicker">Раздел 04</span>
+          <h2>Оформите заказ</h2>
+          <p>
+            Заполните форму, и мы свяжемся с вами для подтверждения заказа.
+          </p>
+
+          <div class="contact-emoji">👋</div>
+
+          <span class="contact-label">Телефон для связи</span>
+          <a class="phone-link" href="tel:89016167002">89016167002</a>
+        </div>
+
+       <form class="order-form" id="order-form">
+  <div class="form-title">
+    <span>📋</span>
+    <h3>Форма заказа</h3>
+  </div>
+
+  <label for="customer-name">Имя</label>
+  <input
+    id="customer-name"
+    name="name"
+    type="text"
+    placeholder="Как к вам обращаться?"
+    required
+  >
+
+  <label for="customer-phone">Телефон</label>
+  <input
+    id="customer-phone"
+    name="phone"
+    type="text"
+    placeholder="Например: 89016167002"
+    required
+  >
+
+  <label for="customer-city">Город доставки</label>
+  <select id="customer-city" name="city" required>
+    <option value="">Выберите город</option>
+    <option>Ленинск-Кузнецк</option>
+    <option>Полысаево</option>
+    <option>Белово</option>
+    <option>Беловский район</option>
+    <option>Гурьевск</option>
+    <option>Киселевск</option>
+    <option>Прокопьевск</option>
+    <option>Новокузнецк</option>
+    <option>Мыски</option>
+    <option>Междуреченск</option>
+    <option>Осинники</option>
+    <option>Кемерово</option>
+  </select>
+<!-- Новый: отдельный адрес -->
+<label for="customer-address">Адрес доставки (улица, дом, подъезд, квартира)</label>
+<textarea
+  id="customer-address"
+  name="address"
+  rows="3"
+  placeholder="Например: ул. Ленина, 15, подъезд 2, кв. 42"
+  required
+  
+></textarea>
+
+<!-- Старый: теперь только пожелания -->
+<label for="customer-comment">Ваши пожелания к заказу (необязательно)</label>
+<textarea
+  id="customer-comment"
+  name="comment"
+  rows="3"
+  placeholder="Например: оставить у двери, не класть специи, нужен чек"
+></textarea>
+
+    <!-- Кнопка отправки на почту (EmailJS) -->
+  <div class="order-actions">
+    <button type="submit" class="button button-primary button-wide">
+      📧 Отправить заказ на почту
+    </button>
+  </div>
+
+  <!-- Кнопка MAX (отдельная, не submit) -->
+  <div style="margin-top:8px;">
+    <button id="btn-max-action" type="button" class="button button-outline button-wide">
+      📱 Написать в MAX (скопировать текст и перейти)
+    </button>
+  </div>
+
+  <!-- Статус отправки -->
+   <!-- Подсказка: появляется после клика по кнопке MAX -->
+<div id="copy-hint" style="display:none; margin-top:12px; padding:12px; background:#e8f4fd; border:1px solid #b6d5f0; color:#0f4c75; border-radius:6px; font-size:14px;">
+  📋 Текст заказа скопирован! Откройте MAX, вставьте его (долгий тап → Вставить) и отправьте.
+</div>
+
+  
+</form>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a class="logo logo--footer" href="#catalog">
-        <span class="logo__crayfish" aria-hidden="true">🦞</span>
-        <span class="logo__text">
-          <strong>СИБРАК42</strong>
-          <small>варёные раки</small>
-        </span>
-      </a>
-
-      <p>Сварили. Упаковали. Привезли.</p>
-
-      <a href="tel:+79991234567">+7 999 123-45-67</a>
+      <span>🥩 Мясная лавка</span>
+      <a href="tel:89016167002">89016167002</a>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+(function() {
+  emailjs.init("5-qUUtfk21_DAlxKN"); // <-- ВСТАВЬ СЮДА свой user ID из кабинета emailjs.com
+})();
+</script>
+
+  
 </body>
 </html>
