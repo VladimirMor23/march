@@ -169,10 +169,8 @@
 
         <div class="delivery-copy">
           <span class="section-kicker">Раздел 03</span>
-          <h2>Доставка в города</h2>
-          <p>
-            Бесплатная доставка действует при общем весе заказа больше 8 кг.
-          </p>
+          <h2>От 8 кг — доставка бесплатно!</h2>
+          
           <p style="color: black;">
            Доставка — только по субботам и воскресеньям. Пожалуйста, учитывайте это при оформлении заказа.
           </p>
@@ -280,6 +278,37 @@
       📧 Отправить заказ на почту
     </button>
   </div>
+<!-- Кнопка-подсказка -->
+<button type="button" id="btn-max-help" class="button button-secondary" style="margin-top:8px; width:200px;">
+  ℹ️ Инструкция для MAX
+</button>
+
+<!-- Попап с GIF и текстом -->
+<div id="max-help-popup" class="video-popup-overlay" style="display:none;">
+  <div class="video-popup-content">
+    <button type="button" class="video-popup-close">&times;</button>
+    <h3>Как отправить заказ в MAX</h3>
+
+    <!-- GIF-анимация -->
+    <img
+      src="images/how-to-paste.gif"
+      alt="Инструкция: нажмите поле → выберите Вставить → текст появится"
+      width="100%"
+      style="border-radius:8px; display:block; margin:12px 0;"
+      loading="lazy"
+    />
+
+    <!-- Универсальный текст (работает, даже если GIF не грузится) -->
+    <p style="font-size:0.95em; line-height:1.5; color:#333;">
+      1. Нажмите кнопку «Написать в MAX» на сайте — текст заказа скопируется.<br>
+      2. Откройте чат в MAX.<br>
+      3. Нажмите на поле ввода и выберите «Вставить» в появившемся меню:<br>
+         &nbsp;&nbsp;• iPhone: достаточно одного нажатия — появится меню.<br>
+         &nbsp;&nbsp;• Android: удерживайте палец, пока не появится меню.<br>
+      4. Отправьте сообщение.
+    </p>
+  </div>
+</div>
 
   <!-- Кнопка MAX (отдельная, не submit) -->
   <div style="margin-top:8px;">
@@ -287,6 +316,7 @@
       📱 Написать в MAX (скопировать текст и перейти)
     </button>
   </div>
+  
 
   <!-- Статус отправки -->
    <!-- Подсказка: появляется после клика по кнопке MAX -->

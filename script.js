@@ -26,7 +26,7 @@ const semiProducts = [
   },
   {
     name: "Рагу говяжье",
-    image: "images/ragu.png",
+    image: "images/ragu.jpeg",
     weight: 1,
     price: 750,
     unit: "кг",
@@ -34,7 +34,7 @@ const semiProducts = [
   },
   {
     name: "Печень говяжья",
-    image: "images/liver.png",
+    image: "images/liver.jpeg",
     weight: 1,
     price: 450,
     unit: "кг",
@@ -42,7 +42,7 @@ const semiProducts = [
   },
   {
     name: "Сальце солёное в рассоле",
-    image: "images/salo.png",
+    image: "images/salo.jpg",
     weight: 2.5,
     price: 1400,
     unit: "кг",
@@ -50,7 +50,7 @@ const semiProducts = [
   },
   {
     name: "Беляши жареные",
-    image: "images/belyashi.jpeg",
+    image: "images/belyashi.jpg",
     weight: 1,
     price: 560,
     unit: "кг",
@@ -58,7 +58,7 @@ const semiProducts = [
   },
   {
     name: "Сосиски в тесте",
-    image: "images/sausages-dough.png",
+    image: "images/sausages-dough.jpg",
     weight: 1,
     price: 560,
     unit: "кг",
@@ -66,7 +66,7 @@ const semiProducts = [
   },
   {
     name: "Пирожки с капустой",
-    image: "images/pies.png",
+    image: "images/pies.jpg",
     weight: 1,
     price: 460,
     unit: "кг",
@@ -74,7 +74,7 @@ const semiProducts = [
   },
   {
     name: "Блины жареные, фаршированные мясом",
-    image: "images/blini.png",
+    image: "images/blini.jpg",
     weight: 1,
     price: 440,
     unit: "кг",
@@ -82,7 +82,7 @@ const semiProducts = [
   },
   {
     name: "Чебупели жареные с мясом",
-    image: "images/chebupeli.png",
+    image: "images/chebupelis.jpg",
     weight: 0.5,
     price: 350,
     unit: "кг",
@@ -90,7 +90,7 @@ const semiProducts = [
   },
   {
     name: "Каша перловая с мясом",
-    image: "images/perlovka.png",
+    image: "images/perlovkas.jpeg",
     weight: 0.5,
     price: 250,
     unit: "кг",
@@ -98,7 +98,7 @@ const semiProducts = [
   },
   {
     name: "Каша гречневая с мясом",
-    image: "images/grechka.png",
+    image: "images/grechka.jpg",
     weight: 0.5,
     price: 250,
     unit: "кг",
@@ -106,7 +106,7 @@ const semiProducts = [
   },
   {
     name: "Сардельки по-домашнему",
-    image: "images/sardelki.png",
+    image: "images/sardelki.jpg",
     weight: 1,
     price: 750,
     unit: "кг",
@@ -114,7 +114,7 @@ const semiProducts = [
   },
   {
     name: "Свиной окорок горячего копчения",
-    image: "images/okorock.jpeg",
+    image: "images/okorock.jpg",
     weight: 1,
     price: 680,
     unit: "кг",
@@ -122,7 +122,7 @@ const semiProducts = [
   },
   {
     name: "Рёбрышки маринованные для жарки",
-    image: "images/ribs-marinated.png",
+    image: "images/ribs-marinated.jpg",
     weight: 1,
     price: 550,
     unit: "кг",
@@ -146,7 +146,7 @@ const semiProducts = [
   },
   {
     name: "Пельмени «Любительские»",
-    image: "images/pelmeni-lub.png",
+    image: "images/pelmeni-lub.jpg",
     weight: 1,
     price: 550,
     unit: "кг",
@@ -154,7 +154,7 @@ const semiProducts = [
   },
   {
     name: "Грудинка копчёная",
-    image: "images/ham.png",
+    image: "images/ham.jpg",
     weight: 1,
     price: 700,
     unit: "кг",
@@ -162,7 +162,7 @@ const semiProducts = [
   },
   {
     name: "Шашлык маринованный из свиной шейки",
-    image: "images/shashlik.png",
+    image: "images/shashlik.jpg",
     weight: 1,
     price: 600,
     unit: "кг",
@@ -170,7 +170,7 @@ const semiProducts = [
   },
   {
     name: "Купаты для жарки",
-    image: "images/kupaty.png",
+    image: "images/kupaty.jpg",
     weight: 1,
     price: 460,
     unit: "кг",
@@ -186,7 +186,7 @@ const semiProducts = [
   },
   {
     name: "Пельмени «Крестьянские»",
-    image: "images/pelmeni-krest.png",
+    image: "images/pelmeni-krest.jpg",
     weight: 1,
     price: 380,
     unit: "кг",
@@ -194,7 +194,7 @@ const semiProducts = [
   },
   {
     name: "Вареники",
-    image: "images/vareniki.png",
+    image: "images/vareniki.jpg",
     weight: 1,
     price: 310,
     unit: "кг",
@@ -210,7 +210,7 @@ const semiProducts = [
   },
   {
     name: "Котлеты",
-    image: "images/cutlets.png",
+    image: "images/cutlets.jpg",
     weight: 1,
     price: 460,
     unit: "кг",
@@ -234,7 +234,7 @@ const semiProducts = [
   },
   {
     name: "Перец фаршированный",
-    image: "images/golubec.png",
+    image: "images/stuffep.jpg",
     weight: 1,
     price: 420,
     unit: "кг",
@@ -242,7 +242,7 @@ const semiProducts = [
   },
   {
     name: "Сосиски по-домашнему",
-    image: "images/homemade-saus.png",
+    image: "images/homemade-saus.jpg",
     weight: 1,
     price: 750,
     unit: "кг",
@@ -250,7 +250,7 @@ const semiProducts = [
   },
   {
     name: "Колбаса по-домашнему",
-    image: "images/homemade-sausage.jpeg",
+    image: "images/homemade-sausage.jpg",
     weight: 0.5,
     price: 450,
     unit: "кг",
@@ -258,7 +258,7 @@ const semiProducts = [
   },
   {
     name: "Голубцы",
-    image: "images/stuffep.png",
+    image: "images/olubecs.jpg",
     weight: 1,
     price: 440,
     unit: "кг",
@@ -266,7 +266,7 @@ const semiProducts = [
   },
   {
     name: "Чебуреки",
-    image: "images/chebupeli.png",
+    image: "images/chebupeli.jpg",
     weight: 1,
     price: 440,
     unit: "кг",
@@ -636,7 +636,7 @@ function renderCart() {
     })
     .join("");
 
-  const isFreeDelivery = totals.weight > FREE_DELIVERY_WEIGHT;
+  const isFreeDelivery = totals.weight >= FREE_DELIVERY_WEIGHT;
   const progressValue = Math.min(
     (totals.weight / FREE_DELIVERY_WEIGHT) * 100,
     100
@@ -754,14 +754,30 @@ document.addEventListener("click", (event) => {
   if (action === "add-placeholder") {
     const name = actionElement.dataset.name;
 
-    addItem({
-      id: `placeholder-${name}`,
-      name: "МЯСНОЙ НАБОР - " + name,
-      price: null,
-      weightPerUnit: null,
-      unit: "кг",
-      isPlaceholder: true
-    });
+   
+  // 1. Сохраняем исходный текст кнопки прямо здесь, ДО любых изменений
+  const originalBtnText = actionElement.textContent;
+
+  // 2. Добавляем товар в корзину (эта функция не должна трогать кнопку)
+  addItem({
+    id: `placeholder-${name}`,
+    name: "МЯСНОЙ НАБОР - " + name,
+    price: null,
+    weightPerUnit: null,
+    unit: "кг",
+    isPlaceholder: true
+  });
+     // Меняем кнопку: текст и блокировка
+  actionElement.textContent = "Добавлено!";
+  actionElement.disabled = true;
+  actionElement.style.opacity = "0.7";
+
+  // Возвращаем кнопку в исходное состояние через 2 секунды
+  setTimeout(() => {
+    actionElement.textContent = originalBtnText;
+    actionElement.disabled = false;
+    actionElement.style.opacity = "1";
+  }, 2000);
 
     return;
   }
@@ -974,6 +990,29 @@ function showMaxStatus(message) {
     status.style.display = "none";
   }, 5000);
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const popup = document.getElementById('max-help-popup');
+  const btnHelp = document.getElementById('btn-max-help');
+  const btnClose = popup ? popup.querySelector('.video-popup-close') : null;
+
+  function showPopup() {
+    if (popup) popup.style.display = 'flex';
+  }
+
+  function hidePopup() {
+    if (popup) popup.style.display = 'none';
+  }
+
+  if (btnHelp) btnHelp.addEventListener('click', showPopup);
+  if (btnClose) btnClose.addEventListener('click', hidePopup);
+
+  // Закрытие по клику вне окна
+  if (popup) {
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) hidePopup();
+    });
+  }
+});
 
 
 
