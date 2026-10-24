@@ -963,7 +963,7 @@ async function sendToMax() {
   const orderText = getOrderText(formData);
 
   const maxProfileLink =
-    "https://max.ru/u/f9LHodD0cOKue-x2NKUpVxq10NHSxAcw0nax1B9c2jEs-uc18u_SbKVeEDM";
+    "https://max.ru/";
 
   try {
     await navigator.clipboard.writeText(orderText);
